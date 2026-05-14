@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: #e42222;
+    background-image: url('../Imagini/MicroBit_Background_Texture.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+#Navigation_Bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff0505;
+    z-index: 2000;
+    padding: 1rem 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.button-link{
+    background-color: #ffe600; 
+    border: 3px solid #d62020;
+    border-radius: 12px;
+    padding: 12px 25px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 0 #d4af37;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: #ca8216;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #d4af37;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+
+.stagger-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+    padding: 0 10% 100px;
+    align-items: start;
+}
+
+
+.edu-card {
+    padding: 10px;
+    border-radius: 40px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.content {
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    transform: rotate(2deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blueprint-header {
+    text-align: center;
+    margin:20px;
+    padding: 140px 20px 60px;
+    background: #f75803;
+    border: 2px dashed #ffc300;;
+    color: #ffc300;
+}
+
+.header-line {
+    width: 50px;
+    height: 5px;
+    background-color: #ffa600;
+    margin: 0 auto 15px;
+}
+
+.left-pos {
+    margin-top: 0px;
+    grid-column: 1;
+    background-color: #ff002f;
+    transform: rotate(-2deg);
+}
+
+.center-pos {
+    margin-top: 50px;
+    grid-column: 2;
+    background: #ffa600;
+    text-align: center;
+    transform: rotate(1deg);
+}
+
+.right-pos {
+    margin-top: 100px;
+    grid-column: 3;
+    background-color: #fffb00;
+    transform: rotate(-2deg);
+}
+
+
+.Mare {
+    grid-column: 1 / 4; 
+    background: #06d6a0;
+    justify-self: center;
+}
+
+
+.tag {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    color: white;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.left-pos .tag { background-color: #ff002f; }
+.center-pos .tag { background: #ffa600; }
+.right-pos .tag { background-color: #fffb00; }
+.Mare .tag { background: #02a77b; }
+
+#Card_Cu_Imagine {
+    grid-column: 1 / 4;
+    max-width: 800px;
+    justify-self: center;
+}
+
+.edu-card img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    aspect-ratio: attr(width) / attr(height); 
+}
+
+#button-centru{
+    background-color: #05fab9;
+    color: #06795a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+
+
+#button-centru:hover {
+    background-color: #02a77b;
+    color: white;
+    transform: scale(1.05);
+}
+
+p { 
+    color: #ff5100; 
+    margin-top: 0; 
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 600px) {
+  .stagger-wrapper {
+    display: block !important;
+  }
+  
+  .edu-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+    transform: none !important;
+  }
+
+  .left-pos, .center-pos, .right-pos {
+    margin-top: 0 !important;
+  }
+}
