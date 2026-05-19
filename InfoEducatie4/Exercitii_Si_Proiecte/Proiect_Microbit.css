@@ -1,7 +1,7 @@
 
 body {
-    background-color: #0f172a;
-    color: #ffffff;
+    background-color: #9966FF;
+    color: #6505a5;
     margin: 0;
     padding: 0;
     padding-top: 80px;
@@ -18,13 +18,12 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    align-items: center;
 }
 
 .button-link {
-    background-color: #f59e0b;
+    background-color: #930cee;
     color: white;
-    border: 2px solid #9c6910;
+    border: 2px solid #2D2D2D;
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
@@ -33,7 +32,7 @@ body {
 }
 
 .button-link:hover {
-    background-color: #a16805;
+    background-color: #6e01b6;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -41,34 +40,23 @@ body {
 .Panou {
     max-width: 850px;
     margin: 40px auto;
-    background:#495974;
-    border: 4px solid #475569;
+    background:#300246;
+    border: 8px solid #2D2D2D;
     border-radius: 4px;
     position: relative;
     padding: 40px;
 }
 
-.surub {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: radial-gradient(circle at 30% 30%, #94a3b8, #1e293b);
-    border-radius: 50%;
-}
-.sus-stanga { top: 10px; left: 10px; }
-.sus-dreapta { top: 10px; right: 10px; }
-.jos-stanga { bottom: 10px; left: 10px; }
-.jos-dreapta { bottom: 10px; right: 10px; }
 
 header {
     text-align: center;
-    border-bottom: 2px solid #f59e0b;
+    border-bottom: 2px solid #D400D4;
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
 
 h1 {
-    color: white;
+    color: #930cee;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
@@ -91,7 +79,7 @@ h1 {
 }
 
 h2 {
-    color: #f59e0b;
+    color: #D400D4;
     font-size: 1.2rem;
     text-transform: uppercase;
     border-left: 4px  #64748b;
@@ -106,46 +94,33 @@ h2 {
     justify-content: space-between;
 }
 
+#button-centru{
+    background-color: #f59e0b;
+    color: #475569;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+#button-centru:hover{
+    background-color: #af7105;
+    color: #475569;
+    transform: scale(1.05);
+}
 
 
 .Component-label { color:#64748b; }
 
 
-.scroll-container {
-    display: flex;
-    overflow-x: auto; 
-    gap: 20px;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.4); 
-    border-radius: 8px;
-    border: 1px solid #495974;
-    scrollbar-width: thin; 
-    scrollbar-color: #f59e0b transparent;
-}
 
 
 
-.photo-card {
-    flex: 0 0 250px;
-    background: #1e293b;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(255,255,255,0.1);
-    text-align: center;
-}
 
-.photo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 3px;
-    margin-bottom: 8px;
-}
-
-.photo-card span {
-    font-size: 0.75rem;
-    color:#94a3b8;
-}
 
 @media (max-width: 600px) {
   .content-section {
@@ -159,19 +134,4 @@ h2 {
     transform: none !important;
   }
 
-  .imagine-cod{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-  }
-
-  #Navigation_Bar .button-link {
-    padding: 8px 12px;
-    font-size: 0.85rem;
-  }
-
 }
-
-

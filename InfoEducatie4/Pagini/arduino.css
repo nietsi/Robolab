@@ -169,10 +169,5 @@ p {
     padding: 10px;
     gap: 10px;
   }
-
-  #Navigation_Bar .button-link {
-    padding: 8px 12px;
-    font-size: 0.85rem;
-  }
 }
 

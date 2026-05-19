@@ -198,12 +198,7 @@ p {
 
   #Navigation_Bar {
     justify-content: center;
-    padding: 10px;
+    padding: 1rem;
     gap: 10px;
-  }
-
-  #Navigation_Bar .button-link {
-    padding: 8px 12px;
-    font-size: 0.85rem;
   }
 }

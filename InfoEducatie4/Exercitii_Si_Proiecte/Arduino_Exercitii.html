@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="Arduino_Exercitii.css">
 
     <!-- Pentru Securitate-->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:;">
     <style>
-        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+         body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
         .question { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
         .result { font-weight: bold; margin-top: 10px; }
         .correct { color: green; }
@@ -122,13 +122,13 @@
             }
 
             if (selectedValue === "correct") {
-                resultDiv.textContent = "Răspuns Corect!";
+                resultDiv.innerHTML = "Răspuns Corect!";
                 resultDiv.className = "result correct";
             } else if (selectedValue === "wrong") {
-                resultDiv.textContent = "Greșit. Mai încearcă!";
+                resultDiv.innerHTML = "Greșit. Mai încearcă!";
                 resultDiv.className = "result wrong";
             } else {
-                resultDiv.textContent = "Vă rugăm să alegeți o variantă.";
+                resultDiv.innerHTML = "Vă rugăm să alegeți o variantă.";
                 resultDiv.className = "result";
             }
         }

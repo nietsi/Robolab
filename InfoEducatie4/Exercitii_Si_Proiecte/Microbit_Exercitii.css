@@ -107,13 +107,6 @@ p {
 }
 
 @media (max-width: 600px) {
-
-  #Navigation_Bar {
-    justify-content: center;
-    padding: 10px;
-    gap: 10px;
-  }
-  
   .stagger-wrapper {
     display: block !important;
   }
